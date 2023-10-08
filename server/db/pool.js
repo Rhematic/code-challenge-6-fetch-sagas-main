@@ -1,4 +1,4 @@
-const pg = require('pg');
+const pg = require("pg");
 
 let pool;
 
@@ -11,8 +11,8 @@ if (process.env.DATABASE_URL) {
   pool = new pg.Pool({
     connectionString: process.env.DATABASE_URL,
     ssl: {
-      rejectUnauthorized: false
-    }
+      rejectUnauthorized: false,
+    },
   });
 }
 // When we're running this app on our own computer
@@ -20,9 +20,9 @@ if (process.env.DATABASE_URL) {
 // also running on our computer (localhost)
 else {
   pool = new pg.Pool({
-    host: 'localhost',
+    host: "localhost",
     port: 5432,
-    database: 'zoo_animals'
+    database: "zoo_animals",
   });
 }
 
