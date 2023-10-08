@@ -1,0 +1,39 @@
+.app {
+  text-align: center;
+}
+
+.app-header {
+  color: white;
+  background-color: darkgreen;
+  min-height: 80px;
+  padding: 20px;
+  margin: 0;
+  margin-bottom: 2em;
+}
+
+.app-title {
+  font-size: 1.5em;
+}
+
+.app-intro {
+  font-size: large;
+}
+
+table {
+    border-collapse: collapse;
+    min-width: 600px;
+    margin: 0 auto;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    color: black;
+}
+
